@@ -1,0 +1,68 @@
+.vaulty-floating {
+    position: fixed;
+    right: 25px;
+    bottom: 25px;
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.vaulty-btn {
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    background: #1f74ff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 38px;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+.vaulty-btn:hover {
+    transform: scale(1.08);
+        box-shadow: 0 3px 12px rgba(31, 116, 255, 0.35);
+
+}
+
+.vaulty-tooltip {
+    background: #0b1d3a;
+    border: 1px solid #1f74ff;
+    border-radius: 14px 14px 4px 14px;
+    padding: 8px 12px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    position: relative;
+}
+
+.vaulty-tooltip::after {
+    content: "";
+    position: absolute;
+    right: -7px;
+    bottom: 10px;
+    width: 12px;
+    height: 12px;
+    background: #0b1d3a;
+    border-right: 1px solid #1f74ff;
+    border-top: 1px solid #1f74ff;
+    transform: rotate(45deg);
+}
+
+.vaulty-tooltip strong {
+    color: white;
+    font-size: 13px;
+}
+
+.vaulty-tooltip span {
+    color: #aeb8c8;
+    font-size: 11px;
+}
+
+@media (max-width: 576px) {
+    .vaulty-floating { right: 12px; bottom: 12px; }
+    .vaulty-tooltip { display: none; }
+    .vaulty-btn { width: 58px; height: 58px; font-size: 30px; }
+}

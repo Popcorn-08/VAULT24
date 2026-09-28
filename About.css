@@ -1,0 +1,221 @@
+
+.about-section {
+    background: #07152f;
+    min-height: 100vh;
+    padding: 40px 5%;
+    color: white;
+}
+
+.about-header {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.about-header h1 {
+    font-size: 38px;
+    margin-bottom: 12px;
+}
+
+.about-header p {
+    color: #aeb8c8;
+    font-size: 18px;
+    max-width: 700px;
+    margin: auto;
+    line-height: 1.6;
+}
+
+.about-box {
+    background: #0b1d3a;
+    border: 1px solid rgba(31, 116, 255, 0.35);
+    border-radius: 15px;
+    padding: 28px;
+    margin-bottom: 25px;
+}
+
+.about-box h2 {
+    text-align: center;
+    font-size: 27px;
+    margin-bottom: 25px;
+}
+
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+}
+
+.feature-card {
+    background: #102849;
+    border: 1px solid rgba(31, 116, 255, 0.4);
+    border-radius: 12px;
+    padding: 22px;
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.feature-card i {
+    width: 55px;
+    height: 55px;
+    background: #1f74ff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    flex-shrink: 0;
+}
+
+.feature-card h3 {
+    margin: 0 0 6px;
+    font-size: 19px;
+}
+
+.feature-card p {
+    color: #aeb8c8;
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+
+.future-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+}
+
+.future-card {
+    background: #102849;
+    border: 1px solid rgba(31, 116, 255, 0.35);
+    border-radius: 12px;
+    padding: 22px 10px;
+    text-align: center;
+}
+
+.future-card i {
+    color: #1f74ff;
+    font-size: 30px;
+}
+
+.future-card p {
+    margin: 12px 0 0;
+    color: white;
+    font-size: 15px;
+}
+
+
+.advantages {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.advantage-card {
+    background: #102849;
+    border: 1px solid rgba(31, 116, 255, 0.35);
+    border-radius: 10px;
+    padding: 15px 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex: 1;
+}
+
+.advantage-card i {
+    color: #1f74ff;
+    font-size: 20px;
+}
+
+
+.social-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+}
+
+.social-card {
+    background: #102849;
+    border: 1px solid rgba(31, 116, 255, 0.35);
+    border-radius: 12px;
+    padding: 20px;
+    color: white;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    font-size: 17px;
+}
+
+.social-card i {
+    font-size: 25px;
+    color: #1f74ff;
+}
+
+.social-card:hover {
+    border-color: #1f74ff;
+    box-shadow: 0 0 15px rgba(31, 116, 255, 0.35);
+}
+
+
+.project-box {
+    text-align: center;
+}
+
+.project-box h3 {
+    font-size: 28px;
+    margin: 10px 0;
+}
+
+.project-box p {
+    color: #aeb8c8;
+    font-size: 17px;
+}
+
+.project-box i {
+    color: #1f74ff;
+    margin-right: 8px;
+}
+
+
+.about-footer {
+    text-align: center;
+    padding: 25px 0 10px;
+    border-top: 1px solid rgba(31, 116, 255, 0.2);
+}
+
+.about-footer h2 {
+    color: white;
+    font-size: 23px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.about-footer p {
+    color: #aeb8c8;
+    margin: 0;
+}
+
+
+@media (max-width: 992px) {
+    .about-section { padding: 30px 3%; }
+    .features-grid { grid-template-columns: repeat(2, 1fr); }
+    .future-grid { grid-template-columns: repeat(2, 1fr); }
+    .social-grid { grid-template-columns: repeat(2, 1fr); }
+    .advantages { flex-wrap: wrap; }
+    .advantage-card { min-width: calc(50% - 8px); box-sizing: border-box; }
+}
+@media (max-width: 576px) {
+    .about-section { padding: 22px 12px; }
+    .about-header h1 { font-size: 30px; }
+    .about-header p { font-size: 15px; }
+    .about-box { padding: 18px; }
+    .about-box h2 { font-size: 23px; }
+    .features-grid, .future-grid, .social-grid { grid-template-columns: 1fr; }
+    .feature-card { padding: 17px; }
+    .advantage-card { min-width: 100%; }
+    .project-box h3 { font-size: 24px; }
+    .project-box p { font-size: 15px; }
+}

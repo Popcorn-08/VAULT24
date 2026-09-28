@@ -1,0 +1,133 @@
+.learn-page {
+    background: #07152f;
+    min-height: 100vh;
+    padding: 40px 6%;
+    color: white;
+}
+.learn-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+.learn-header h1 {
+    font-size: 36px;
+    margin-bottom: 12px;
+}
+.learn-header p {
+    color: #aeb8c8;
+    font-size: 16px;
+    max-width: 700px;
+    margin: auto;
+    line-height: 1.6;
+}
+.learn-card {
+    background: #0b1d3a;
+    border: 1px solid #1f74ff;
+    border-radius: 12px;
+    padding: 25px;
+    margin-bottom: 25px;
+}
+.learn-card h2 {
+    text-align: center;
+    margin-bottom: 18px;
+}
+.learn-card > p {
+    color: #aeb8c8;
+    text-align: center;
+    line-height: 1.6;
+}
+.simple-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+.simple-grid > div {
+    background: #102849;
+    border: 1px solid #203e68;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+}
+.simple-grid > div:hover {
+    border-color: #1f74ff;
+}
+.simple-grid span {
+    font-size: 30px;
+}
+.simple-grid h3 {
+    margin: 10px 0;
+}
+.simple-grid p {
+    color: #aeb8c8;
+    font-size: 14px;
+    line-height: 1.5;
+}
+.tags {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 20px;
+}
+.tags span {
+    background: #102849;
+    border: 1px solid #203e68;
+    padding: 9px 15px;
+    border-radius: 20px;
+    color: #aeb8c8;
+}
+.tags span:hover {
+    border-color: #1f74ff;
+}
+.filters {
+    background: #102849;
+    border-radius: 10px;
+    padding: 18px;
+    margin-top: 22px;
+    text-align: center;
+}
+.filters h3 {
+    margin-top: 0;
+}
+.filters span {
+    margin: 0 10px;
+    color: #aeb8c8;
+}
+.vaulty {
+    text-align: center;
+}
+.vaulty-icon {
+    width: 70px;
+    height: 70px;
+    background: #1f74ff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    margin: 0 auto 15px;
+}
+.learn-end {
+    background: #0b1d3a;
+    border: 1px solid #1f74ff;
+    border-radius: 12px;
+    text-align: center;
+    padding: 30px;
+}
+.learn-end h2 {
+    margin-bottom: 8px;
+}
+.learn-end p {
+    color: #aeb8c8;
+}
+
+@media (max-width: 992px) {
+    .learn-page { padding: 30px 4%; }
+    .simple-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 576px) {
+    .learn-page { padding: 22px 12px; }
+    .learn-header h1 { font-size: 30px; }
+    .learn-card, .learn-end { padding: 18px; }
+    .simple-grid { grid-template-columns: 1fr; }
+    .filters span { display: block; margin: 8px 0; }
+}

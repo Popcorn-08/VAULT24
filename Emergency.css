@@ -1,0 +1,291 @@
+.emergency-page {
+    background: #07152f;
+    min-height: 100vh;
+    padding: 30px 5%;
+}
+
+.emergency-container {
+    background: #081a38;
+    border: 1px solid #244d80;
+    border-radius: 15px;
+    padding: 30px;
+}
+
+.emergency-header {
+    margin-bottom: 25px;
+}
+
+.emergency-header h1 {
+    color: #ff4d4d;
+    font-size: 32px;
+    margin: 0 0 8px;
+}
+
+.emergency-header p {
+    color: #aeb8c8;
+    font-size: 17px;
+    margin: 0;
+}
+
+.emergency-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
+    margin-bottom: 25px;
+}
+
+.emergency-card {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    padding: 22px;
+    border-radius: 12px;
+    border: 1px solid #31547c;
+}
+
+.police {
+    background: #102b52;
+}
+
+.ambulance {
+    background: #102f28;
+}
+
+.fire {
+    background: #39261a;
+}
+
+.cyber {
+    background: #241b45;
+}
+
+.emergency-icon {
+    width: 75px;
+    height: 75px;
+    background: #1f74ff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 38px;
+}
+
+.emergency-card h2 {
+    color: white;
+    margin: 0 0 8px;
+    font-size: 23px;
+}
+
+.emergency-card button {
+    background: transparent;
+    border: none;
+    padding: 0;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.police button {
+    color: #4da3ff;
+}
+
+.ambulance button {
+    color: #28c76f;
+}
+
+.fire button {
+    color: #ff5b35;
+}
+
+.cyber button {
+    color: #9c5cff;
+}
+
+.emergency-section,
+.contacts-section {
+    background: #07152f;
+    border: 1px solid #284b73;
+    border-radius: 12px;
+    margin-bottom: 25px;
+    overflow: hidden;
+}
+
+.section-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 25px;
+}
+
+.section-title h2 {
+    color: white;
+    margin: 0;
+    font-size: 22px;
+}
+
+.section-title button {
+    background: transparent;
+    color: #4da3ff;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.place-row,
+.contact-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 25px;
+    border-top: 1px solid #203d60;
+    color: #ffffff;
+    font-size: 17px;
+}
+
+.place-row span:last-child {
+    color: #aeb8c8;
+}
+
+.contact-row button {
+    width: 45px;
+    height: 40px;
+    background: transparent;
+    border: 1px solid #4da3ff;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 17px;
+}
+
+.safety-section {
+    background: #24152a;
+    border: 1px solid #8c365f;
+    border-radius: 12px;
+    padding: 25px;
+    margin-bottom: 25px;
+}
+
+.safety-section h2 {
+    color: #ff4d88;
+    margin: 0 0 20px;
+    font-size: 22px;
+}
+
+.safety-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+.safety-grid button,
+.vault-details-btn {
+    background: transparent;
+    border: 1px solid #ff4d88;
+    color: white;
+    border-radius: 9px;
+    padding: 16px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.vault-details-btn {
+    width: 100%;
+    margin-top: 15px;
+}
+
+.safety-grid button:hover,
+.vault-details-btn:hover {
+    background: #3a1d32;
+}
+
+.vaulty-section {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+    background: #101f3d;
+    border: 1px solid #3b6fa8;
+    border-radius: 12px;
+    padding: 25px;
+}
+
+.vaulty-icon {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    background: #1f74ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 38px;
+}
+
+.vaulty-content h2 {
+    color: white;
+    margin: 0 0 8px;
+}
+
+.vaulty-content p {
+    color: #aeb8c8;
+    margin: 0 0 15px;
+}
+
+.vaulty-commands {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-bottom: 18px;
+}
+
+.vaulty-commands span {
+    background: #172f52;
+    color: #dce8f7;
+    padding: 8px 12px;
+    border-radius: 7px;
+    font-size: 14px;
+}
+
+.vaulty-button {
+    background: #1f74ff;
+    color: white;
+    border: none;
+    padding: 11px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.vaulty-button:hover {
+    background: #1763dc;
+}
+
+.emergency-message {
+    background: #102b52;
+    border: 1px solid #4da3ff;
+    color: white;
+    padding: 15px;
+    border-radius: 8px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+@media (max-width: 992px) {
+    .emergency-page { padding: 25px 3%; }
+    .emergency-container { padding: 22px; }
+    .emergency-grid { grid-template-columns: 1fr; }
+}
+@media (max-width: 576px) {
+    .emergency-page { padding: 15px 10px; }
+    .emergency-container { padding: 15px; }
+    .emergency-header h1 { font-size: 27px; }
+    .emergency-header p { font-size: 14px; }
+    .emergency-card { gap: 15px; padding: 16px; }
+    .emergency-icon { width: 58px; height: 58px; font-size: 29px; flex-shrink: 0; }
+    .emergency-card h2 { font-size: 19px; }
+    .emergency-card button { font-size: 16px; }
+    .section-title { padding: 16px; gap: 10px; }
+    .section-title h2 { font-size: 18px; }
+    .place-row, .contact-row { padding: 14px 16px; font-size: 15px; }
+    .safety-section { padding: 17px; }
+    .safety-grid { grid-template-columns: 1fr; }
+    .vaulty-section { flex-direction: column; align-items: flex-start; gap: 15px; padding: 18px; }
+    .vaulty-icon { width: 60px; height: 60px; font-size: 30px; }
+    .vaulty-commands { gap: 8px; }
+}

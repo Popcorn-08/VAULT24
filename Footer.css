@@ -1,0 +1,86 @@
+.vault-footer {
+    background: #07152f;
+    color: white;
+    margin-top: 50px;
+    border-top: 1px solid rgba(31, 116, 255, 0.25);
+}
+
+.vault-footer-content {
+    background: #0b1d3a;
+    padding: 40px 6%;
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.footer-brand {
+    width: 35%;
+}
+
+.footer-brand h2 {
+    font-size: 25px;
+    margin: 0 0 12px;
+    font-weight: 600;
+}
+
+.footer-brand h2 span {
+    color: #1f74ff;
+}
+
+.footer-brand p {
+    color: #aeb8c8;
+    font-size: 14px;
+    line-height: 1.7;
+    margin: 0;
+}
+
+.footer-section {
+    min-width: 140px;
+}
+
+.footer-section h3 {
+    font-size: 16px;
+    margin: 0 0 15px;
+    color: white;
+}
+
+.footer-section p {
+    color: #aeb8c8;
+    font-size: 14px;
+    margin: 9px 0;
+}
+
+.footer-section p:hover {
+    color: #1f74ff;
+    cursor: pointer;
+}
+
+.vault-footer-bottom {
+    padding: 15px 6%;
+    border-top: 1px solid rgba(31, 116, 255, 0.2);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.vault-footer-bottom p {
+    color: #aeb8c8;
+    font-size: 13px;
+    margin: 0;
+}
+
+.vault-footer-bottom span {
+    color: #aeb8c8;
+    font-size: 13px;
+}
+
+@media (max-width: 768px) {
+    .vault-footer-content { padding: 30px 7%; flex-wrap: wrap; gap: 28px; }
+    .footer-brand { width: 100%; }
+    .footer-section { min-width: 40%; }
+    .vault-footer-bottom { padding: 15px 7%; gap: 8px; flex-direction: column; text-align: center; }
+}
+@media (max-width: 480px) {
+    .vault-footer-content { padding: 25px 8%; }
+    .footer-section { min-width: 100%; }
+}
